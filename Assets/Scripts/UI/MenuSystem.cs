@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,7 +12,7 @@ namespace Oathstring
     public class MenuSystem : MonoBehaviour
     {
         [SerializeField] private Button continueButton;
-        [SerializeField] private TMP_InputField easterEggInputField;
+        [SerializeField] private CanvasGroup easterEggInput;
 
         private bool continueProgress;
         private LoadingScreenHandler loadingScreenHandler;
@@ -32,7 +33,9 @@ namespace Oathstring
         {
             if(input)
             {
-                easterEggInputField.GetComponent<Image>().enabled = true;
+                easterEggInput.alpha = 1;
+                easterEggInput.interactable = true;
+                easterEggInput.blocksRaycasts = true;
             }
         }
 

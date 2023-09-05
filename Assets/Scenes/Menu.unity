@@ -745,6 +745,7 @@ GameObject:
   - component: {fileID: 241738112}
   - component: {fileID: 241738111}
   - component: {fileID: 241738114}
+  - component: {fileID: 241738115}
   m_Layer: 5
   m_Name: EasterEggInput
   m_TagString: Untagged
@@ -785,7 +786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -913,7 +914,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241738109}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -959,6 +960,18 @@ MonoBehaviour:
   easterEggLoader: {fileID: 4011509489080334252, guid: aff102fa844b27047b41468d350b2c00, type: 3}
   easterEggs:
   - 2 bulan
+--- !u!225 &241738115
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241738109}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
 --- !u!1001 &263558212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3656,8 +3669,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1724934492}
   - {fileID: 241738110}
+  - {fileID: 1724934492}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4498,7 +4511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   continueButton: {fileID: 1627728476}
-  easterEggInputField: {fileID: 241738111}
+  easterEggInput: {fileID: 241738115}
 --- !u!4 &1719490923
 Transform:
   m_ObjectHideFlags: 0
